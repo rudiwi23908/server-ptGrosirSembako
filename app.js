@@ -1,7 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 3000;
-const ip = "192.168.252.94";
+const port = process.env.PORT;
+const ip = process.env.IP;
 const cors = require("cors");
 
 const barang = require("./routes/barang");
