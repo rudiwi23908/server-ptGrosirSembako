@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 5000;
 // const ip = process.env.IP;
 const cors = require("cors");
 
@@ -32,7 +32,7 @@ app.use("/penjualan", penjualan);
 
 // Jalankan server
 app.listen(port, () => {
-  console.log(`Server berjalan di http://:${port}`);
+  console.log(`Server berjalan di http://localhost:${port}`);
 });
 
 module.exports = { app, port, express, cors };
